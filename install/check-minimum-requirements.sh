@@ -1,6 +1,6 @@
 echo "${_group}Checking minimum requirements ..."
 
-source "$(dirname $0)/install/_min-requirements.sh"
+source "$(dirname $0)/_min-requirements.sh"
 
 # Compare dot-separated strings - function below is inspired by https://stackoverflow.com/a/37939589/808368
 function ver () { echo "$@" | awk -F. '{ printf("%d%03d%03d", $1,$2,$3); }'; }
