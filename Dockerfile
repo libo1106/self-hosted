@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN echo $pwd
+RUN echo $PWD
 
 RUN ./install.sh --skip-user-prompt
 
