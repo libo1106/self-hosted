@@ -21,5 +21,8 @@ jobs:
     - name: install sentry
       run: |
         ./install.sh --skip-user-prompt
+    - name: check image
+      run: |
+        docker images ls
 #    - name: Build the Docker image
 #      run: docker build . --file Dockerfile --tag sentry:$(date +%s)
