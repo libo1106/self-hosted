@@ -18,5 +18,8 @@ jobs:
       run: |
         echo $PWD
         ls -al
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag sentry:$(date +%s)
+    - name: install sentry
+      run: |
+        ./install.sh --skip-user-prompt
+#    - name: Build the Docker image
+#      run: docker build . --file Dockerfile --tag sentry:$(date +%s)
