@@ -1,8 +1,10 @@
 FROM ubuntu:22.04
 
+COPY . /app
+
 RUN echo $PWD \
  && ls -al
 
-RUN ./install.sh --skip-user-prompt
+RUN /app/install.sh --skip-user-prompt
 
 EXPOSE 9000
