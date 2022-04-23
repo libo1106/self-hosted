@@ -17,5 +17,6 @@ jobs:
     - name: checkout env
       run: |
         echo $PWD
+        ls -al
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag sentry:$(date +%s)
